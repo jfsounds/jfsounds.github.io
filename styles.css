@@ -1,62 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Libre+Baskerville:wght@400;700&family=Noto+Sans+JP&display=swap');
-
-body {
-  font-family: 'Libre Baskerville', serif;
-  background: #fff;
-  color: #111;
-  margin: 0;
-  padding: 0;
-  font-size: 18px;
-  line-height: 1.6;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  flex-direction: column;
-}
-html[lang="ja"] body {
-  font-family: 'Noto Sans JP', sans-serif;
-}
-h1, h2, .links a {
-  font-family: 'Montserrat', sans-serif;
-}
-h1 {
-  font-size: 3rem;
-  font-weight: 400;
-  margin-bottom: 0.5rem;
-}
-h2 {
-  font-size: 1.3rem;
-  font-weight: 400;
-  margin-bottom: 2rem;
-  color: #666;
-}
-.links a {
-  display: block;
-  margin: 0.5em 0;
-  text-decoration: none;
-  color: #333;
-  font-size: 1rem;
-}
-.links a:hover {
-  text-decoration: underline;
-}
-main {
-  max-width: 700px;
-  padding: 0 20px;
-}
-section {
-  margin-top: 3em;
-  text-align: left;
-}
-section h2 {
-  margin-bottom: 0.5em;
-}
-
-
-
 .sidebar-left {
   position: fixed;
   top: 0;
@@ -69,6 +11,10 @@ section h2 {
   font-family: 'Libre Baskerville', serif;
   text-align: left;
   z-index: 1000;
+}
+
+.sidebar-left[lang="ja"] {
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 .sidebar-left ul {
@@ -85,8 +31,4 @@ section h2 {
   text-decoration: none;
   color: #333;
   font-weight: bold;
-}
-
-html[lang="ja"] .sidebar-left {
-  font-family: 'Noto Sans JP', sans-serif;
 }
